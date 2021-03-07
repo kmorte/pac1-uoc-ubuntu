@@ -56,6 +56,12 @@ body {
     background: linear-gradient(to bottom, #c0ffee, hsl(179, 74%, 85%));
     /* background-color: black; */
 }
+a:visited {
+    color: black;
+}
+a:hover {
+    color: black;
+}
 
 header {
     margin-left: 15px;
@@ -66,8 +72,16 @@ header h1 {
 }
 header h2 {
     float: right;
+    /* transition-timing-function: linear; */
+    transition: transform 6s, text-shadow 2s;
 }
-
+header h2:hover {
+    transform: rotateX(180deg) rotateY(180deg);
+    color: transparent;
+    text-shadow: 0 0 4px rgb(0, 0, 0);
+}
+/* .light h2:hover { */
+/* } */
 /* VENDORS */
 /* h4 {
 
