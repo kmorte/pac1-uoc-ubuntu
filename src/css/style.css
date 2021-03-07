@@ -1,6 +1,135 @@
+
+@font-face {
+    font-family: doraemon;
+    src: url(./fonts/doraemon.ttf);
+}
+@font-face {
+    font-family: parksAndRecreation;
+    src: url(./fonts/parksAndRecreation.otf) format("opentype");
+}
+@font-face {
+    font-family: pulpFiction;
+    src: url(./fonts/pulpFiction.ttf);
+}
+@font-face {
+    font-family: theWalkingDeath;
+    src: url(./fonts/Tungsten-Bold.ttf);
+}
+@font-face {
+    font-family: friends;
+    src: url(./fonts/friends.ttf);
+}
+@font-face {
+    font-family: bobSponge;
+    src: url(./fonts/bobSponge.ttf);
+}
+/* La pots inclinar i utlitzar una part en color vermell */
+@font-face {
+    font-family: bigBang;
+    src: url(./fonts/bigBang.otf);
+}
+@font-face {
+    font-family: twinPeaks;
+    src: url(./fonts/twinPeaks.otf);
+}
+@font-face {
+    font-family: thePunisher;
+    src: url(./fonts/thePunisher.otf) format("opentype");
+}
+
+@font-face {
+    font-family: american;
+    src: url(./fonts/american.ttf);
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    height: 100vh;
+    /* height: 100vh; */
+    color: #1f1f1f;
+    background: linear-gradient(to bottom, #bada55, #c0ffee);
+    /* background-color: black; */
+}
+
+h1.doraemon, h2.doraemon {
+    font-family: doraemon;
+}
+h1.parks, h2.parks {
+    font-family: parksAndRecreation;
+}
+h1.pulp, h2.pulp {
+    font-family: pulpFiction;
+}
+h1.walking, h2.walking {
+    font-family: theWalkingDeath;
+    font-size: 48px;
+}
+h1.friends, h2.friends {
+    font-family: friends;
+    font-size: 48px;
+}
+h1.bob, h2.bob {
+    font-family: bobSponge;
+    font-size: 48px;
+}
+h1.bigbang, h2.bigbang {
+    font-family: bigBang;
+    font-size: 48px;
+}
+h1.twin, h2.twin {
+    font-family: twinPeaks;
+    font-size: 48px;
+    color: rgb(119, 192, 106);
+}
+h3.twin {
+    font-family: twinPeaks;
+    font-size: 12;
+}
+h1.punisher, h2.punisher {
+    font-family: thePunisher;
+    font-size: 48px;
+    font-kerning: auto;
+}
+h1.american, h2.american {
+    font-family: american;
+    font-size: 12;
+}
+
+.carte {
+    display: flex;
+    font-size: 1.5rem;
+    list-style: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 h1 {
     color: orange;
 }
 body {
-    background-color: pink;
+    background-color: white;
 }
+
