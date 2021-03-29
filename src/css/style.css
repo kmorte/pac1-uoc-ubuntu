@@ -61,7 +61,7 @@ html {
 body {
     margin: 0;
     color: #1f1f1f;
-    background: linear-gradient(to bottom, #c0ffee, hsl(179, 74%, 85%));
+    /* background: linear-gradient(to bottom, #c0ffee, hsl(179, 74%, 85%)); */
     /* background-color: black; */
 }
 a {
@@ -122,7 +122,7 @@ ul {
 
 .carte li {
     flex-grow: 1;
-    border: 1px solid rgb(254, 201, 159);
+    border: 1px solid rgb(235, 229, 225);
     padding: 5px;
     margin: 2px;
     border-radius: 2px;
@@ -142,8 +142,8 @@ section {
     justify-content: space-evenly;
 }
 section div {
-    /* display: grid; */
-    grid-template-rows: repeat(3, 1fr);
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 2fr;/*  repeat(3, 1fr); */
     flex-grow: 0;
     /* float: left; */
     width: 300px;
@@ -151,11 +151,12 @@ section div {
     /* min-width: 300px;
     max-width: 500px; */
     margin: 50px auto;
-    border: 1px solid orange;
+    border: 1px solid rgb(240, 238, 236);
+
 }
 section div:hover {
-    background-color: rgb(43, 220, 226);
-    border: 1px solid red;
+    background-color: rgb(230, 234, 235);
+    border: 1px solid rgb(0, 0, 0);
 }
 section h3 {
     float: left;
@@ -164,7 +165,7 @@ section h3 {
 }
 section ul {
     font-size: 1.5rem;
-    float: left;
+    /* float: left; */
     padding: 0;
 }
 .ingredients li {
@@ -178,24 +179,27 @@ section#reservations {
     justify-content: unset;
 }
 section#reservations h3 {
+    display: inline;
     width: 100%;
 }
+section#reservations p {
+    display: inline;
+}
 h4 {
-    position: absolute;
+    position: relative;
     margin: 0;
     bottom: 0;
 }
 
 img {
-    float: right;
+    justify-self: center;
     width: 150px;
     margin: 0;
-    overflow: hidden;
     clip-path: circle(30%);
 }
 img:hover {
-    width: initial;
-    clip-path: circle(100%);
+    /* width: initial; */
+    clip-path: circle(70%);
 }
 #opening {
     font-family: archer;
@@ -261,9 +265,4 @@ h1.american, h2.american {
     font-family: american;
     font-size: 12;
 }
-#circle {
-    width: 250px;
-    height: 100px;
-    background-color: #1f1f1f;
-    border-radius: 100%;
-}
+
