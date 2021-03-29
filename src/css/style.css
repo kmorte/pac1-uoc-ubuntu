@@ -1,91 +1,222 @@
 
 @font-face {
+    font-family: archer;
+    src: url(../fonts/Archer-Bold-Pro.otf);
+    /* src: url(../fonts/Archer-Bold-Pro.otf); */
+}
+
+@font-face {
     font-family: doraemon;
-    src: url(./fonts/doraemon.ttf);
+    src: url(../fonts/doraemon.ttf);
 }
 @font-face {
     font-family: parksAndRecreation;
-    src: url(./fonts/parksAndRecreation.otf) format("opentype");
+    src: url(../fonts/parksAndRecreation.otf) format("opentype");
 }
 @font-face {
     font-family: pulpFiction;
-    src: url(./fonts/pulpFiction.ttf);
+    src: url(../fonts/pulpFiction.ttf);
 }
 @font-face {
     font-family: theWalkingDeath;
-    src: url(./fonts/Tungsten-Bold.ttf);
+    src: url(../fonts/Tungsten-Bold.ttf);
 }
 @font-face {
     font-family: friends;
-    src: url(./fonts/friends.ttf);
+    src: url(../fonts/friends.ttf);
 }
 @font-face {
     font-family: bobSponge;
-    src: url(./fonts/bobSponge.ttf);
+    src: url(../fonts/bobSponge.ttf);
 }
 /* La pots inclinar i utlitzar una part en color vermell */
 @font-face {
     font-family: bigBang;
-    src: url(./fonts/bigBang.otf);
+    src: url(../fonts/bigBang.otf);
 }
+/* Century gotics works as twinpeaks font */
 @font-face {
     font-family: twinPeaks;
-    src: url(./fonts/twinPeaks.otf);
+    src: url(../fonts/twinPeaks.otf);
 }
 @font-face {
     font-family: thePunisher;
-    src: url(./fonts/thePunisher.otf) format("opentype");
+    src: url(../fonts/thePunisher.otf) format("opentype");
 }
 
 @font-face {
     font-family: american;
-    src: url(./fonts/american.ttf);
+    src: url(../fonts/american.ttf);
 }
-
+:root {
+    --my-fav-color: rgb(237, 86, 25)
+}
 html {
     font-size: 10px;
     margin: 0;
-    height: 100vh;
+    /* height: 100vh; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     margin: 0;
-    /* height: 100vh; */
     color: #1f1f1f;
     background: linear-gradient(to bottom, #c0ffee, hsl(179, 74%, 85%));
     /* background-color: black; */
 }
+a {
+    text-decoration: none;
+}
 a:visited {
     color: black;
+    font-style: none;
 }
 a:hover {
     color: black;
 }
 
-header {
-    margin-left: 15px;
-    margin-right: 15px;
-}
 header h1 {
     float: left;
+    margin-left: 3rem;
 }
-header h2 {
-    float: right;
+header h5 {
+    position: fixed;
+    right: 3rem;
+    /* float: right; */
+    font-size: 1.2rem;
+    margin-right: 3rem;
     /* transition-timing-function: linear; */
     transition: transform 6s, text-shadow 2s;
 }
-header h2:hover {
+header h5:hover {
     transform: rotateX(180deg) rotateY(180deg);
     color: transparent;
     text-shadow: 0 0 4px rgb(0, 0, 0);
 }
-/* .light h2:hover { */
-/* } */
-/* VENDORS */
-/* h4 {
+nav {
+    position: fixed;
+    left: 3rem;
+}
 
-} */
+h2 {
+    text-align: initial;
+
+    font-size: 2rem;
+    margin-left: 3rem;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+.carte {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    margin: 20px auto;
+    width: 60%;
+    padding: 0;
+    justify-content: center;
+}
+
+.carte li {
+    flex-grow: 1;
+    border: 1px solid rgb(254, 201, 159);
+    padding: 5px;
+    margin: 2px;
+    border-radius: 2px;
+}
+
+.carte li:hover {
+    cursor: pointer;
+    background-color: rgb(192, 172, 183);
+}
+section {
+    /* width: 40%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto auto;
+    /* text-align: center; */
+    justify-content: space-evenly;
+}
+section div {
+    /* display: grid; */
+    grid-template-rows: repeat(3, 1fr);
+    flex-grow: 0;
+    /* float: left; */
+    width: 300px;
+    /* width: 25%; */
+    /* min-width: 300px;
+    max-width: 500px; */
+    margin: 50px auto;
+    border: 1px solid orange;
+}
+section div:hover {
+    background-color: rgb(43, 220, 226);
+    border: 1px solid red;
+}
+section h3 {
+    float: left;
+    width: 75%;
+    font-size: 2.5rem;
+}
+section ul {
+    font-size: 1.5rem;
+    float: left;
+    padding: 0;
+}
+.ingredients li {
+    display: inline-block;
+    word-break: break-all;
+}
+section li::before {
+    content: '·';
+}
+section#reservations {
+    justify-content: unset;
+}
+section#reservations h3 {
+    width: 100%;
+}
+h4 {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+}
+
+img {
+    float: right;
+    width: 150px;
+    margin: 0;
+    overflow: hidden;
+    clip-path: circle(30%);
+}
+img:hover {
+    width: initial;
+    clip-path: circle(100%);
+}
+#opening {
+    font-family: archer;
+    font-size: 48px;
+    text-align: center;
+    /* margin: 100px auto; */
+}
+
+#bobSponge h3 {
+    font-family: bobSponge;
+    font-size: 28px;
+    color: var(--my-fav-color);
+}
+
+.twin-peaks h3 {
+    font-family: twinPeaks;
+}
+
+#reservations h2 {
+    font-family: american;
+}
 
 h1.doraemon, h2.doraemon {
     font-family: doraemon;
@@ -108,7 +239,7 @@ h1.bob, h2.bob {
     font-family: bobSponge;
     font-size: 48px;
 }
-h1.bigbang, h2.bigbang {
+h1.bigbang, h2.bigbang { /* fet */
     font-family: bigBang;
     font-size: 48px;
 }
@@ -130,50 +261,9 @@ h1.american, h2.american {
     font-family: american;
     font-size: 12;
 }
-ul {
-    padding: 0;
-}
-li {
-    list-style: none;
-}
-.carte {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.5rem;
-    margin: 20px auto;
-    width: 60%;
-    padding: 0;
-}
-
-.carte li {
-    flex-grow: 1;
-    border: 1px solid rgb(254, 201, 159);
-    padding: 5px;
-    margin: 2px;
-    border-radius: 2px;
-}
-
-.carte li:hover {
-    cursor: pointer;
-    background-color: rgb(192, 172, 183);
-}
-section {
-    width: 40%;
-    margin: 20px auto;
-}
-section div {
-    float: left;
-    margin: 10px 10px;
-}
-section ul {
-    font-size: 1.5rem;
-    float: left;
-}
-.bobSponge h3 {
-    font-family: bobSponge;
-    font-size: 28px;
-}
-.bobSponge img {
-    width: 150px;
-    float: right;
+#circle {
+    width: 250px;
+    height: 100px;
+    background-color: #1f1f1f;
+    border-radius: 100%;
 }

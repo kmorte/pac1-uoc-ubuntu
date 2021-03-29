@@ -1,17 +1,10 @@
 
-console.log('Food site')
-console.log('For the uoc Master')
-console.log('Welcome');
+import Elevator from 'elevator.js'
 
-
-const scrollTo = (target, duration) => {
-    const targetEl = document.querySelector(target);
-    console.log(targetEl);
-}
-
-scrollTo('#hamburger')
-const a = JSON.stringify({kev: 'kevin'})
-const b = JSON.parse(a)
-
-console.log(a);
-console.log(b);
+const textBtn = document.querySelector('#opening')
+console.log(textBtn)
+const elevator = new Elevator({
+    element: textBtn,
+    mainAudio: './src/music/music.mp3', // Music from http://www.bensound.com/
+    endAudio:  './src/music/ding.mp3'
+});
