@@ -54,48 +54,63 @@
 html {
     font-size: 10px;
     margin: 0;
-    /* height: 100vh; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     margin: 0;
+    margin-top: 2rem;
     color: #1f1f1f;
-    /* background: linear-gradient(to bottom, #c0ffee, hsl(179, 74%, 85%)); */
-    /* background-color: black; */
 }
 a {
     text-decoration: none;
+    color: black;
 }
 a:visited {
     color: black;
     font-style: none;
 }
 a:hover {
-    color: black;
+    color: grey;
 }
-
+h1 {
+    font-size: 10rem;
+    margin-top: 25%;
+    margin-left: 5rem;
+}
+header {
+    margin-left: 5rem;
+}
 header h1 {
-    float: left;
-    margin-left: 3rem;
+    margin: 0;
+    font-size: 2rem;
+    /* float: left; */
+    margin-left: 0;
 }
-header h5 {
+nav {
     position: fixed;
-    right: 3rem;
-    /* float: right; */
+    width: 100%;
     font-size: 1.2rem;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+}
+.lost {
+    /* position: fixed; */
+    /* float: right; */
     margin-right: 3rem;
     /* transition-timing-function: linear; */
     transition: transform 6s, text-shadow 2s;
 }
-header h5:hover {
+.lost:hover {
     transform: rotateX(180deg) rotateY(180deg);
-    color: transparent;
     text-shadow: 0 0 4px rgb(0, 0, 0);
-}
-nav {
-    position: fixed;
-    left: 3rem;
+    color: transparent;
 }
 
 h2 {
@@ -114,7 +129,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     font-size: 1.5rem;
-    margin: 20px auto;
+    margin: 4rem auto;
     width: 60%;
     padding: 0;
     justify-content: center;
@@ -172,6 +187,9 @@ section ul {
     display: inline-block;
     word-break: break-all;
 }
+p.extras {
+    font-size: 1rem;
+}
 section li::before {
     content: '·';
 }
@@ -221,6 +239,39 @@ img:hover {
 #reservations h2 {
     font-family: american;
 }
+li p {
+    font-size: 1rem;
+}
+iframe {
+}
+h6 {
+    font-size: 5rem;
+    /* margin: 3rem; */
+    /* margin-top: 20rem; */
+    margin: auto;
+}
+
+p {
+    font-size: 2rem;
+}
+
+/* ABOUT */
+
+#vid-lost {
+
+}
+#vid-left {
+    /* margin-left: 5rem; */
+    margin: auto;
+
+}
+
+
+
+
+
+
+
 
 h1.doraemon, h2.doraemon {
     font-family: doraemon;
