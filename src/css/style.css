@@ -100,14 +100,15 @@ nav ul {
 nav li {
     display: inline-block;
 }
-.lost {
-    /* position: fixed; */
+li .lost {
+    /* If position is not either fixed or absolute (at least those two) the transition transform does not work */
+    position: absolute;
     /* float: right; */
     margin-right: 3rem;
     /* transition-timing-function: linear; */
     transition: transform 6s, text-shadow 2s;
 }
-.lost:hover {
+li .lost:hover {
     transform: rotateX(180deg) rotateY(180deg);
     text-shadow: 0 0 4px rgb(0, 0, 0);
     color: transparent;
@@ -167,16 +168,30 @@ section div {
     max-width: 500px; */
     margin: 50px auto;
     border: 1px solid rgb(240, 238, 236);
+    text-align: center;
 
 }
 section div:hover {
     background-color: rgb(230, 234, 235);
     border: 1px solid rgb(0, 0, 0);
+    text-justify: inter-word;
+
+
 }
 section h3 {
     float: left;
     width: 75%;
     font-size: 2.5rem;
+    text-align: left;
+}
+section h4 {
+    visibility: hidden;
+    text-align: left;
+
+}
+section div:hover h4 {
+    position: relative;
+    visibility: visible;
 }
 section ul {
     font-size: 1.5rem;
@@ -204,9 +219,10 @@ section#reservations p {
     display: inline;
 }
 h4 {
-    position: relative;
+    position: static;
+    height: 12px;
     margin: 0;
-    bottom: 0;
+    padding: 0;
 }
 
 img {
@@ -239,9 +255,18 @@ img:hover {
 #reservations h2 {
     font-family: american;
 }
+h3 span {
+    font-size: 2rem;
+    font-style: italic;
+}
+section + span {
+    margin-left: 3rem;
+    font-size: 1rem;
+}
 li p {
     font-size: 1rem;
 }
+
 iframe {
 }
 h6 {
