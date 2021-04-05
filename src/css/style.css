@@ -77,6 +77,19 @@ h1 {
     font-size: 10rem;
     margin-top: 25%;
     margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 0;
+}
+h2 {
+    text-align: initial;
+    font-size: 5rem;
+    margin-left: 5rem;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+section h2 {
+    font-size: 2rem;
+    margin-left: 3rem;
 }
 header {
     margin-left: 5rem;
@@ -114,18 +127,14 @@ li .lost:hover {
     color: transparent;
 }
 
-h2 {
-    text-align: initial;
 
-    font-size: 2rem;
-    margin-left: 3rem;
-    text-transform: uppercase;
-}
 
 ul {
     list-style: none;
 }
-
+.inside {
+    visibility: hidden;
+}
 .carte {
     display: flex;
     flex-wrap: wrap;
@@ -204,6 +213,7 @@ section ul {
 }
 p.extras {
     font-size: 1rem;
+    background-color: initial;
 }
 section li::before {
     content: '·';
@@ -267,8 +277,6 @@ li p {
     font-size: 1rem;
 }
 
-iframe {
-}
 h6 {
     font-size: 5rem;
     /* margin: 3rem; */
@@ -278,67 +286,25 @@ h6 {
 
 p {
     font-size: 2rem;
+    margin-left: 5rem;
+    width: 55%;
 }
-
+p + ul {
+    padding: 0;
+    margin-left: 5rem;
+}
 /* ABOUT */
 
-#vid-lost {
-
-}
-#vid-left {
+#vid {
     /* margin-left: 5rem; */
-    margin: auto;
-
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
 }
-
-
-
-
-
-
-
-
-h1.doraemon, h2.doraemon {
-    font-family: doraemon;
-}
-h1.parks, h2.parks {
-    font-family: parksAndRecreation;
-}
-h1.pulp, h2.pulp {
-    font-family: pulpFiction;
-}
-h1.walking, h2.walking {
-    font-family: theWalkingDeath;
-    font-size: 48px;
-}
-h1.friends, h2.friends {
-    font-family: friends;
-    font-size: 48px;
-}
-h1.bob, h2.bob {
-    font-family: bobSponge;
-    font-size: 48px;
-}
-h1.bigbang, h2.bigbang { /* fet */
-    font-family: bigBang;
-    font-size: 48px;
-}
-h1.twin, h2.twin {
-    font-family: twinPeaks;
-    font-size: 48px;
-    color: rgb(119, 192, 106);
-}
-h3.twin {
-    font-family: twinPeaks;
-    font-size: 12;
-}
-h1.punisher, h2.punisher {
-    font-family: thePunisher;
-    font-size: 48px;
-    font-kerning: auto;
-}
-h1.american, h2.american {
-    font-family: american;
-    font-size: 12;
+#vid p {
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-left: 1rem;
+    width: 20%;
 }
 
