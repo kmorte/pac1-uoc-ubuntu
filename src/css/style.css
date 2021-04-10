@@ -32,7 +32,6 @@ a {
 }
 a:visited {
     color: black;
-    font-style: none;
 }
 a:hover {
     color: grey;
@@ -249,7 +248,7 @@ p + ul {
     bottom: -20vh;
     margin-top: 0rem;
     margin-left: 5rem;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 #vid p {
     font-size: 1.4rem;
@@ -298,6 +297,10 @@ h2 + div p {
         top: 35%;
         padding: 0;
         margin-left: 5rem;
+    }
+    section {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     section div {
         width: 100%;
