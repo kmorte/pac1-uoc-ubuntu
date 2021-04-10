@@ -1,53 +1,17 @@
 
-@font-face {
-    font-family: archer;
-    src: url(../fonts/Archer-Bold-Pro.otf);
-    /* src: url(../fonts/Archer-Bold-Pro.otf); */
-}
 
-@font-face {
-    font-family: doraemon;
-    src: url(../fonts/doraemon.ttf);
-}
-@font-face {
-    font-family: parksAndRecreation;
-    src: url(../fonts/parksAndRecreation.otf) format("opentype");
-}
-@font-face {
-    font-family: pulpFiction;
-    src: url(../fonts/pulpFiction.ttf);
-}
-@font-face {
-    font-family: theWalkingDeath;
-    src: url(../fonts/Tungsten-Bold.ttf);
-}
-@font-face {
-    font-family: friends;
-    src: url(../fonts/friends.ttf);
-}
 @font-face {
     font-family: bobSponge;
     src: url(../fonts/bobSponge.ttf);
 }
 /* La pots inclinar i utlitzar una part en color vermell */
-@font-face {
-    font-family: bigBang;
-    src: url(../fonts/bigBang.otf);
-}
+
 /* Century gotics works as twinpeaks font */
 @font-face {
     font-family: twinPeaks;
     src: url(../fonts/twinPeaks.otf);
 }
-@font-face {
-    font-family: thePunisher;
-    src: url(../fonts/thePunisher.otf) format("opentype");
-}
 
-@font-face {
-    font-family: american;
-    src: url(../fonts/american.ttf);
-}
 :root {
     --my-fav-color: rgb(237, 86, 25)
 }
@@ -117,9 +81,7 @@ nav li {
 li .lost {
     /* If position is not either fixed or absolute (at least those two) the transition transform does not work */
     position: absolute;
-    /* float: right; */
     margin-right: 3rem;
-    /* transition-timing-function: linear; */
     transition: transform 6s, text-shadow 2s;
 }
 li .lost:hover {
@@ -159,23 +121,17 @@ ul {
     background-color: rgb(192, 172, 183);
 }
 section {
-    /* width: 40%; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto auto;
-    /* text-align: center; */
     justify-content: space-evenly;
 }
 section div {
     display: grid;
     grid-template-rows: 1fr, 1fr, 2fr;/*  repeat(3, 1fr); */
     flex-grow: 0;
-    /* float: left; */
     width: 300px;
-    /* width: 25%; */
-    /* min-width: 300px;
-    max-width: 500px; */
     margin: 50px auto;
     border: 1px solid rgb(240, 238, 236);
     text-align: center;
@@ -205,7 +161,6 @@ section div:hover h4 {
 }
 section ul {
     font-size: 1.5rem;
-    /* float: left; */
     padding: 0;
 }
 .ingredients li {
@@ -243,14 +198,12 @@ img {
     clip-path: circle(30%);
 }
 img:hover {
-    /* width: initial; */
     clip-path: circle(70%);
 }
 #opening {
     font-family: archer;
     font-size: 48px;
     text-align: center;
-    /* margin: 100px auto; */
 }
 
 #bobSponge h3 {
@@ -263,9 +216,6 @@ img:hover {
     font-family: twinPeaks;
 }
 
-#reservations h2 {
-    font-family: american;
-}
 h3 span {
     font-size: 2rem;
     font-style: italic;
@@ -280,8 +230,6 @@ li p {
 
 h6 {
     font-size: 5rem;
-    /* margin: 3rem; */
-    /* margin-top: 20rem; */
     margin: auto;
 }
 
@@ -297,8 +245,6 @@ p + ul {
 /* ABOUT */
 
 #vid {
-    /* margin-left: 5rem; */
-    /* position: absolute; */
     position: relative;
     bottom: -20vh;
     margin-top: 0rem;
@@ -310,6 +256,11 @@ p + ul {
     display: inline-block;
     margin-left: 1rem;
     width: 20%;
+}
+
+/* MENU */
+#opening {
+    word-break: normal;
 }
 .detail-list {
     position: fixed;
