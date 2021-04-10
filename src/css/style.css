@@ -326,7 +326,6 @@ h2 + div p {
 @media (max-width: 780px) {
     body {
         width: 100%;
-        background-color: khaki;
 
     }
     #vid p {
@@ -348,6 +347,9 @@ h2 + div p {
         top: 35%;
         padding: 0;
         margin-left: 5rem;
+    }
+    section div {
+        width: 100%;
     }
 
 }
