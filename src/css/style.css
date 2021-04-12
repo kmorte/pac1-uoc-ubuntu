@@ -1,12 +1,14 @@
-
-
 @font-face {
     font-family: bobSponge;
     src: url(../fonts/bobSponge.ttf);
 }
+
+
 /* La pots inclinar i utlitzar una part en color vermell */
 
+
 /* Century gotics works as twinpeaks font */
+
 @font-face {
     font-family: twinPeaks;
     src: url(../fonts/twinPeaks.otf);
@@ -15,6 +17,7 @@
 :root {
     --my-fav-color: rgb(237, 86, 25)
 }
+
 html {
     font-size: 10px;
     margin: 0;
@@ -26,16 +29,20 @@ body {
     margin-top: 2rem;
     color: #1f1f1f;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 a:visited {
     color: black;
 }
+
 a:hover {
     color: grey;
 }
+
 h1 {
     font-size: 10rem;
     margin-top: 25%;
@@ -44,6 +51,7 @@ h1 {
     margin-bottom: 0;
     word-break: break-all;
 }
+
 h2 {
     text-align: initial;
     font-size: 5rem;
@@ -51,52 +59,60 @@ h2 {
     margin-top: 0;
     text-transform: uppercase;
 }
+
 section h2 {
     font-size: 2rem;
     margin-left: 3rem;
 }
+
 header {
     margin-left: 5rem;
 }
+
 header h1 {
     margin: 0;
     font-size: 2rem;
     /* float: left; */
     margin-left: 0;
 }
+
 nav {
     position: fixed;
     width: 100%;
     font-size: 1.2rem;
 }
+
 nav ul {
     display: flex;
     justify-content: space-evenly;
     padding: 0;
 }
+
 nav li {
     display: inline-block;
 }
+
 li .lost {
     /* If position is not either fixed or absolute (at least those two) the transition transform does not work */
     position: absolute;
     margin-right: 3rem;
     transition: transform 6s, text-shadow 2s;
 }
+
 li .lost:hover {
     transform: rotateX(180deg) rotateY(180deg);
     text-shadow: 0 0 4px rgb(0, 0, 0);
     color: transparent;
 }
 
-
-
 ul {
     list-style: none;
 }
+
 .inside {
     visibility: hidden;
 }
+
 .carte {
     display: flex;
     flex-wrap: wrap;
@@ -119,6 +135,7 @@ ul {
     cursor: pointer;
     background-color: rgb(192, 172, 183);
 }
+
 section {
     display: flex;
     flex-direction: row;
@@ -126,63 +143,73 @@ section {
     margin: auto auto;
     justify-content: space-evenly;
 }
+
 section div {
     display: grid;
-    grid-template-rows: 1fr, 1fr, 2fr;/*  repeat(3, 1fr); */
+    grid-template-rows: 1fr, 1fr, 2fr;
+    /*  repeat(3, 1fr); */
     flex-grow: 0;
     width: 300px;
     margin: 50px auto;
     border: 1px solid rgb(240, 238, 236);
     text-align: center;
-
 }
+
 section div:hover {
     background-color: rgb(230, 234, 235);
     border: 1px solid rgb(0, 0, 0);
     text-justify: inter-word;
-
-
 }
+
 section h3 {
     float: left;
     width: 75%;
     font-size: 2.5rem;
     text-align: left;
 }
+
 section h4 {
     visibility: hidden;
     text-align: left;
-
 }
+
 section div:hover h4 {
     position: relative;
     visibility: visible;
 }
+
 section ul {
     font-size: 1.5rem;
     padding: 0;
 }
+
 .ingredients li {
     display: inline-block;
     word-break: break-all;
 }
+
 p.extras {
     font-size: 1rem;
     background-color: initial;
 }
+
 section div li::before {
     content: '·';
 }
+
 section#reservations {
     justify-content: unset;
 }
+
 section#reservations h3 {
     display: inline;
     width: 100%;
 }
+
 section#reservations p {
     display: inline;
 }
+
 h4 {
     position: static;
     height: 12px;
@@ -196,9 +223,11 @@ img {
     margin: 0;
     clip-path: circle(30%);
 }
+
 img:hover {
     clip-path: circle(70%);
 }
+
 #opening {
     font-family: archer;
     font-size: 48px;
@@ -219,10 +248,12 @@ h3 span {
     font-size: 2rem;
     font-style: italic;
 }
-section + span {
+
+section+span {
     margin-left: 3rem;
     font-size: 1rem;
 }
+
 li p {
     font-size: 1rem;
 }
@@ -237,19 +268,23 @@ p {
     margin-left: 5rem;
     width: 55%;
 }
-p + ul {
+
+p+ul {
     padding: 0;
     margin-left: 5rem;
 }
+
+
 /* ABOUT */
 
 #vid {
     position: relative;
-    bottom: -20vh;
+    bottom: -40vh;
     margin-top: 0rem;
     margin-left: 5rem;
     padding-bottom: 2rem;
 }
+
 #vid p {
     font-size: 1.4rem;
     display: inline-block;
@@ -257,26 +292,29 @@ p + ul {
     width: 20%;
 }
 
+
 /* MENU */
+
 #opening {
     word-break: normal;
 }
+
 .detail-list {
     position: fixed;
     right: 3rem;
     bottom: 1.5rem;
     z-index: 1;
 }
-h2 + div p {
+
+h2+div p {
     margin-left: 5rem;
-    margin-top:  0.2rem;
-    margin-bottom:  0.2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
 }
 
 @media (max-width: 780px) {
     body {
         width: 100%;
-
     }
     #vid p {
         width: 60%;
@@ -305,11 +343,10 @@ h2 + div p {
     section div {
         width: 100%;
     }
-
 }
+
 @media (max-width: 500px) {
     h1 {
         word-break: break-all;
     }
 }
-
