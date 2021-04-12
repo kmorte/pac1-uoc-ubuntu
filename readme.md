@@ -20,5 +20,7 @@ Respecta la política de tall de les paraules, en general es break-all. Sobre to
 NPM PACKAGE ELEVATOR.JS
 He descarregat com a dependència addicional Elevator.js. Es tracta d'una petita dependència que afegeix una funcionalitat alternativa al scroll del ratolí, quan aquest és per a pujar de nou.
 
+Es pot veure que a la carpeta generada per parcel, el meu codi, si bé petit, pròpi de les últimes especificaions (arrow function i ús de const) es modificat, transpilat a la línia 129 amb versió antiga de JavaScript, i empra la nomenclatura 'function' o el keyword var, en comptes de const.
+
 DETALL
-La pàgina de detall està enllaçada a través del títol de la fitxa de producte de la p``agina "menu" del producte "cheese burger".
+La pàgina de detall està enllaçada a través del títol de la fitxa de producte de la página "menu" del producte "cheese burger".
