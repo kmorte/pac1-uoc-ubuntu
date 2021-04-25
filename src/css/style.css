@@ -18,6 +18,7 @@
     --my-fav-color: rgb(237, 86, 25)
 }
 
+
 html {
     font-size: 10px;
     margin: 0;
@@ -117,6 +118,34 @@ nav ul {
 nav li {
     display: inline-block;
 }
+footer img {
+    width: calc(2rem + 0.5vw);
+}
+footer img:hover {
+    opacity: 0.5;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 1rem;
+}
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+footer div {
+    display: inline-block;
+}
+.social-media {
+    text-align: left;
+    margin-left: 5rem;
+}
+.payment-methods {
+    position: fixed;
+    text-align: right;
+    margin-right: 5rem;
+    right: 1rem;
+}
 
 li .lost {
     /* If position is not either fixed or absolute (at least those two) the transition transform does not work */
@@ -133,6 +162,7 @@ li .lost:hover {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 .inside {
@@ -255,6 +285,7 @@ img:hover {
 }
 
 #opening {
+    margin-bottom: 8rem;
     font-family: archer;
     font-size: 48px;
     text-align: center;
@@ -285,7 +316,7 @@ li p {
 }
 
 h6 {
-    font-size: 5rem;
+    font-size: 1.5rem;
     margin: auto;
 }
 
@@ -308,7 +339,7 @@ p+ul {
     bottom: -40vh;
     margin-top: 0rem;
     margin-left: 5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 8rem;
 }
 
 #vid p {
@@ -387,6 +418,9 @@ img.jules {
     }
     section div {
         width: 100%;
+    }
+    #opening {
+        margin-bottom: 10rem;
     }
 }
 

@@ -24,3 +24,7 @@ Es pot veure que a la carpeta generada per parcel, el meu codi, si bé petit, pr
 
 DETALL
 La pàgina de detall està enllaçada a través del títol de la fitxa de producte de la página "menu" del producte "cheese burger".
+
+
+DOCUMENTACIÓ PEC2
+Incorporo el footer amb dos llistes de logotips (social media y mètodes de pagament). Seguint la línia del header, que el mantinc, el faig en "position" "fixed" així és visible en qualsevol altura de la pàgina. Mantinc les dos llistes enganxades a cada costat. No gestiono la colocació un damunt de l'altre per a mides estretes, perque no col·lisionen fins a mides molt estretes i els dispositiu d'avui dia ja tenen mides suficients.
