@@ -92,19 +92,9 @@ section h2 {
     margin-left: 3rem;
 }
 
-header {
-    margin-left: 5rem;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-    /* float: left; */
-    margin-left: 0;
-}
-
 nav {
     position: fixed;
+    bottom: 1rem;
     width: 100%;
     font-size: 1.2rem;
 }
@@ -118,23 +108,26 @@ nav ul {
 nav li {
     display: inline-block;
 }
-footer img {
-    width: calc(2rem + 0.5vw);
+header img {
+    width: calc(1.25rem + 0.25vw);
 }
-footer img:hover {
+header img:hover {
     opacity: 0.5;
 }
-footer {
+header {
     position: fixed;
     width: 100%;
-    bottom: 1rem;
+    top: 1rem;
 }
-footer ul {
+header ul {
     display: flex;
     justify-content: space-evenly;
 }
-footer div {
+header div {
     display: inline-block;
+}
+header h6 {
+    font-size: calc(0.75rem + 0.5vw);
 }
 .social-media {
     text-align: left;
