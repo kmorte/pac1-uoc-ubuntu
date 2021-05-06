@@ -47,7 +47,7 @@ a:hover {
 
 h1 {
     font-size: 10rem;
-    margin-top: 25%;
+    margin-top: 15%;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 0;
@@ -369,6 +369,26 @@ img.jules {
 
 }
 
+#smiley {
+    clip-path: polygon(85% 6%, 70% 15%, 30% 15%, 15% 5%, 0% 25%, 10% 45%, 10% 75%, 25% 90%, 40% 95%, 60% 95%, 75% 91%, 90% 75%, 90% 45%, 100% 25%);
+    /* display: flex; */
+    width: min-content;
+    margin: 6rem auto;
+    animation: rotation 60s infinite steps(60)
+}
+#smiley img {
+    width: 250px;
+
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+    
+}
 @media (max-width: 1060px) {
     .detail-list {
         position: sticky;
