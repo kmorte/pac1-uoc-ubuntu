@@ -23,7 +23,7 @@ html {
     font-size: 10px;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }
 
 body {
@@ -352,8 +352,9 @@ p+ul {
 .detail-list {
     position: fixed;
     right: 3rem;
-    bottom: 1.5rem;
-    z-index: 1;
+    bottom: 4rem;
+    /* z-index: 1; */
+    mix-blend-mode: color-burn;
 }
 
 h2+div p {
@@ -389,8 +390,32 @@ body#bk {
     background-size: cover;
 }
 body#bk footer {
-    background-color: aqua;
+    /* background-color: aqua; */
 }
+
+#footer-detall {
+    /* padding-top: 860px; */
+    z-index: 2;
+}
+h1.detall,
+h2.detall,
+div.detall,
+div.detall a {
+    color: rgba(238, 238, 236, 1);
+    width: 600px;
+    padding-bottom: 50px;
+}
+div.detall a:hover,
+.detail-list li a:hover,
+#footer-detall a:hover {
+    color: rgba(255, 255, 18, 1);
+}
+ul.detail-list,
+.detail-list li a,
+#footer-detall a {
+    color: rgba(238, 238, 236, 1);
+}
+
 @keyframes rotation {
     from {
         transform: rotate(0deg);
@@ -398,20 +423,28 @@ body#bk footer {
     to {
         transform: rotate(359deg);
     }
-    
+
 }
 @media (max-width: 1060px) {
-    .detail-list {
+    /* .detail-list {
         position: sticky;
         top: 28%;
         bottom: 900px;
         padding: 0;
         margin-left: 5rem;
-    }
+    } */
     #vid iframe {
         min-width: 560px;
     }
 
+}
+@media (max-width: 940px) {
+    .payment-methods h6 {
+        color: rgba(238, 238, 236, 1);
+    }
+    path {
+        fill: blue
+    }
 }
 @media (max-width: 860px) {
     #vid p {
@@ -445,6 +478,10 @@ body#bk footer {
     }
     #opening {
         margin-bottom: 10rem;
+    }
+    .detail-list {
+        bottom: 20rem;
+        left: 5rem
     }
 }
 
