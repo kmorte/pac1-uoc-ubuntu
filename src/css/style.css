@@ -371,13 +371,23 @@ img.jules {
 }
 
 #smiley {
+    clip-path: polygon(100% 0%, 68% 19%, 32% 20%, 0% 0%, 0% 0%, 14% 45%, 14% 74%, 24% 84%, 30% 96%, 61% 96%, 70% 83%, 81% 71%, 82% 44%, 98% 0%);
+    /* display: flex; */
+    width: min-content;
+    margin: 6rem auto;
+    /* animation: rotation 60s infinite steps(60) */
+}
+#smiley img {
+    width: 250px;
+}
+#unsmiley {
     clip-path: polygon(85% 6%, 70% 15%, 30% 15%, 15% 5%, 0% 25%, 10% 45%, 10% 75%, 25% 90%, 40% 95%, 60% 95%, 75% 91%, 90% 75%, 90% 45%, 100% 25%);
     /* display: flex; */
     width: min-content;
     margin: 6rem auto;
     animation: rotation 60s infinite steps(60)
 }
-#smiley img {
+#unsmiley img {
     width: 250px;
 
 }
@@ -389,9 +399,9 @@ body#bk {
     /* height: 100%; */
     background-size: cover;
 }
-body#bk footer {
+/* body#bk footer { */
     /* background-color: aqua; */
-}
+/* } */
 
 #footer-detall {
     /* padding-top: 860px; */
@@ -414,6 +424,15 @@ ul.detail-list,
 .detail-list li a,
 #footer-detall a {
     color: rgba(238, 238, 236, 1);
+}
+
+.dolby {
+    /* display: block; */
+    position: relative;
+    right: 130px;
+    top: 225px;
+    /* padding: 50vh auto; */
+    width: 25px;
 }
 
 @keyframes rotation {
@@ -441,9 +460,6 @@ ul.detail-list,
 @media (max-width: 940px) {
     .payment-methods h6 {
         color: rgba(238, 238, 236, 1);
-    }
-    path {
-        fill: blue
     }
 }
 @media (max-width: 860px) {
@@ -481,7 +497,11 @@ ul.detail-list,
     }
     .detail-list {
         bottom: 20rem;
-        left: 5rem
+        left: 5rem;
+    }
+    .detail-list ul li,
+    .detail-list li a {
+        color: rgb(0, 0, 0);
     }
 }
 
